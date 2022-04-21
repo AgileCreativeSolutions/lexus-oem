@@ -1,0 +1,390 @@
+/* Font */
+@font-face {
+font-family: "nobel-light";
+font-display: swap;
+src: url(https://www.lexus.com/content/dam/lexus/typography/nobel/nobel-light.woff) format("woff"), url(/etc.clientlibs/lexus/clientlibs/lexus-react/resources/static/media/nobel-light.ff343758.woff) format("woff")
+}
+
+@font-face {
+font-family: "nobel-book";
+font-display: swap;
+src: url(https://www.lexus.com/content/dam/lexus/typography/nobel/nobel-book.woff) format("woff"), url(/etc.clientlibs/lexus/clientlibs/lexus-react/resources/static/media/nobel-book.fea428b8.woff) format("woff")
+}
+
+@font-face {
+font-family: "nobel-regular";
+font-display: swap;
+src: url(https://www.lexus.com/content/dam/lexus/typography/nobel/nobel-regular.woff) format("woff"), url(/etc.clientlibs/lexus/clientlibs/lexus-react/resources/static/media/nobel-regular.baff0f5c.woff) format("woff");
+font-style:normal
+}
+
+@font-face {
+font-family: "nobel-book-italic";
+font-display: swap;
+src: url(https://www.lexus.com/content/dam/lexus/typography/nobel/nobel-book-italic.woff) format("woff"), url(/etc.clientlibs/lexus/clientlibs/lexus-react/resources/static/media/nobel-book-italic.8238a59e.woff) format("woff");
+font-style:normal
+}
+
+@font-face {
+font-family: "nobel-bold";
+font-display: swap;
+src: url(https://www.lexus.com/content/dam/lexus/typography/nobel/nobel-bold.woff) format("woff"), url(/etc.clientlibs/lexus/clientlibs/lexus-react/resources/static/media/nobel-bold.1bb99c98.woff) format("woff")
+}
+
+@font-face {
+font-family: "pakt";
+font-display: swap;
+src: url(https://www.lexus.com/content/dam/lexus/typography/pakt/pakt.woff) format("woff"), url(/etc.clientlibs/lexus/clientlibs/lexus-react/resources/static/media/pakt.ed8d8620.woff) format("woff")
+}
+
+
+.acs-h1, .acs-h2, .acs-h3, .acs-h4, .acs-h5, .acs-h6 {
+font-family: "nobel-book", sans-serif;
+font-weight: 700;
+line-height: 1.2;
+text-transform: uppercase
+}
+
+.acs-h1 {
+font-size: 2rem;
+}
+
+.acs-h2 {
+font-size: 1.8rem;
+}
+
+.acs-h3 {
+font-size: 1.6rem;
+}
+
+.acs-h4 {
+font-size: 1.4rem;
+}
+
+.acs-h5 {
+font-size: 1.2rem;
+}
+
+.acs-h6 {
+font-size: 1.1rem;
+}
+
+/* Larger than phablet */
+@media (min-width: 575px) {
+.acs-h1 {
+font-size: 2.5rem !important;
+}
+
+.acs-h2 {
+font-size: 2.2rem !important;
+}
+
+.acs-h3 {
+font-size: 1.8rem !important;
+}
+
+.acs-h4 {
+font-size: 1.6rem !important;
+}
+
+.acs-h5 {
+font-size: 1.4rem !important;
+}
+
+.acs-h6 {
+font-size: 1.2rem !important;
+}
+}
+
+
+.acs-wrapper { 
+font-family: "nobel-book", sans-serif;
+font-weight: 400;
+}
+
+.acs-lexus-brand-xl {
+font-family: "nobel-light";
+font-weight: 200;
+}
+
+.acs-lexus-brand-lt {
+font-family: "nobel-book"; 
+font-weight: 300;
+}
+
+.acs-lexus-brand-lt-italic {
+font-family: "nobel-book-italic";
+font-weight: 300;
+}
+
+.acs-lexus-brand-cond {
+font-family: "pakt";
+font-weight: 400;
+}
+
+
+/* Variables */
+.acs-wrapper {
+--accent: #B6A171;
+--black: #000000; 
+--white: #ffffff; 
+--gray: #F9F9F9; 
+--gray2: #F5F5F5;
+--gray3: #EAEAEA;
+--gray4: #EEEEEE;
+--dark: #1D1D1D;
+--bold-font: "nobel-bold", sans-serif;
+}
+
+
+
+/* Text Colors */
+.acs-black {
+color: var(--black)
+}
+.acs-white {
+color: var(--white)
+}
+.acs-gray {
+color: var(--gray)
+}
+.acs-gray2 {
+color: var(--gray2)
+}
+.acs-gray3 {
+color: var(--gray3)
+}
+.acs-gray4 {
+color: var(--gray4)
+}
+.acs-dark {
+color: var(--dark)
+}
+
+
+/* Accent Colors */
+.acs-accent {
+color: var(--accent);
+}
+
+
+
+/* BG Colors */
+.acs-bg-accent {
+background-color: var(--accent)
+}
+.acs-bg-gray {
+background-color: var(--gray)
+}
+.acs-bg-gray2 {
+background-color: var(--gray2)
+}
+.acs-bg-gray3 {
+background-color: var(--gray3)
+}
+.acs-bg-gray4 {
+background-color: var(--gray4)
+}
+.acs-bg-dark {
+background-color: var(--dark)
+}
+
+
+
+
+/* Link Accent */
+.acs-link-accent {
+font-family: var(--bold-font);   
+font-weight: 700;
+text-transform: uppercase;
+color: var(--black);
+text-decoration: none;
+position: relative;
+display: inline-block;
+border-bottom: solid 1px var(--black);
+padding-bottom: 1px ;
+letter-spacing: 1.3px
+}
+
+
+/* BUTTONS: START */
+/* Button 1 */
+.acs-button {
+font: var(--LexusButton-font, 13px/18px "nobel-bold");
+letter-spacing: var(--LexusButton-font, 0.04em);
+transition: all 150ms cubic-bezier(0.335, 0.015, 0.46, 0.995) 0s;
+box-sizing: border-box;
+text-decoration: none;
+text-align: center;
+cursor: pointer;
+padding: 0px 20px;
+min-width: 220px;
+height: 50px;
+border-radius: 0px;
+display: inline-flex;
+-webkit-box-align: center;
+align-items: center;
+-webkit-box-pack: center;
+justify-content: center;
+appearance: none;
+color: var(--black);
+border: 2px solid var(--white);
+background-color: var(--white);
+text-transform: uppercase
+}
+.acs-button:hover {
+background-color: transparent;
+color: var(--white);
+border: solid 2px var(--white)
+}
+
+/* Button 2 */
+.acs-button2 {
+font: var(--LexusButton-font, 13px/18px "nobel-bold");
+letter-spacing: var(--LexusButton-font, 0.04em);
+transition: all 150ms cubic-bezier(0.335, 0.015, 0.46, 0.995) 0s;
+box-sizing: border-box;
+text-decoration: none;
+text-align: center;
+cursor: pointer;
+padding: 0px 20px;
+min-width: 220px;
+height: 50px;
+border-radius: 0px;
+display: inline-flex;
+-webkit-box-align: center;
+align-items: center;
+-webkit-box-pack: center;
+justify-content: center;
+appearance: none;
+color: var(--black);
+border: 2px solid var(--white);
+background-color: transparent;
+text-transform: uppercase
+}
+.acs-button2:hover {
+background-color: var(--white);
+color: var(--black);
+border: solid 2px var(--white)
+}
+
+/* Button 3 */
+.acs-button3 {
+font: var(--LexusButton-font, 13px/18px "nobel-bold");
+letter-spacing: var(--LexusButton-font, 0.04em);
+transition: all 150ms cubic-bezier(0.335, 0.015, 0.46, 0.995) 0s;
+box-sizing: border-box;
+text-decoration: none;
+text-align: center;
+cursor: pointer;
+padding: 0px 20px;
+min-width: 220px;
+height: 50px;
+border-radius: 0px;
+display: inline-flex;
+-webkit-box-align: center;
+align-items: center;
+-webkit-box-pack: center;
+justify-content: center;
+appearance: none;
+color: var(--white);
+border: 2px solid var(--black);
+background-color: var(--black);
+text-transform: uppercase
+}
+.acs-button3:hover {
+background-color: transparent;
+color: var(--black);
+border: solid 2px var(--black)
+}
+
+/* Button 4 */
+.acs-button4 {
+font: var(--LexusButton-font, 13px/18px "nobel-bold");
+letter-spacing: var(--LexusButton-font, 0.04em);
+transition: all 150ms cubic-bezier(0.335, 0.015, 0.46, 0.995) 0s;
+box-sizing: border-box;
+text-decoration: none;
+text-align: center;
+cursor: pointer;
+padding: 0px 20px;
+min-width: 220px;
+height: 50px;
+border-radius: 0px;
+display: inline-flex;
+-webkit-box-align: center;
+align-items: center;
+-webkit-box-pack: center;
+justify-content: center;
+appearance: none;
+color: var(--black);
+border: 2px solid var(--black);
+background-color: transparent;
+text-transform: uppercase
+}
+.acs-button4:hover {
+background-color: var(--black);
+color: var(--white);
+border: solid 2px var(--black)
+}
+
+/* Button 5 */
+.acs-button5 {
+font: var(--LexusButton-font, 13px/18px "nobel-bold");
+letter-spacing: var(--LexusButton-font, 0.04em);
+transition: all 150ms cubic-bezier(0.335, 0.015, 0.46, 0.995) 0s;
+box-sizing: border-box;
+text-decoration: none;
+text-align: center;
+cursor: pointer;
+padding: 0px 20px;
+min-width: 220px;
+height: 50px;
+border-radius: 0px;
+display: inline-flex;
+-webkit-box-align: center;
+align-items: center;
+-webkit-box-pack: center;
+justify-content: center;
+appearance: none;
+color: var(--white);
+border: 2px solid var(--black);
+background-color: var(--black);
+text-transform: uppercase
+}
+.acs-button5:hover {
+background-color: var(--white);
+color: var(--black);
+border: solid 2px var(--black)
+}
+
+/* Button 6 */
+.acs-button6 {
+font: var(--LexusButton-font, 13px/18px "nobel-bold");
+letter-spacing: var(--LexusButton-font, 0.04em);
+transition: all 150ms cubic-bezier(0.335, 0.015, 0.46, 0.995) 0s;
+box-sizing: border-box;
+text-decoration: none;
+text-align: center;
+cursor: pointer;
+padding: 0px 20px;
+min-width: 220px;
+height: 50px;
+border-radius: 0px;
+display: inline-flex;
+-webkit-box-align: center;
+align-items: center;
+-webkit-box-pack: center;
+justify-content: center;
+appearance: none;
+color: var(--black);
+border: 2px solid var(--black);
+background-color: var(--white);
+text-transform: uppercase
+}
+.acs-button6:hover {
+background-color: var(--black);
+color: var(--white);
+border: solid 2px var(--black)
+}
+/* BUTTONS: END */
