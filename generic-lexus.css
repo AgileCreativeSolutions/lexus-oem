@@ -40,7 +40,7 @@ src: url(https://www.lexus.com/content/dam/lexus/typography/pakt/pakt.woff) form
 
 .acs-h1, .acs-h2, .acs-h3, .acs-h4, .acs-h5, .acs-h6 {
 font-family: "nobel-book", sans-serif;
-font-weight: 700;
+font-weight: 400;
 line-height: 1.2;
 text-transform: uppercase
 }
@@ -120,6 +120,11 @@ font-weight: 300;
 .acs-lexus-brand-cond {
 font-family: "pakt";
 font-weight: 400;
+}
+
+.acs-bold {
+font-family: var(--bold-font);   
+font-weight: 700;
 }
 
 
