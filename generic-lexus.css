@@ -1,4 +1,4 @@
-/* Font */
+/* OEM Font Embed */
 @font-face {
 font-family: "nobel-light";
 font-display: swap;
@@ -12,16 +12,16 @@ src: url(https://www.lexus.com/content/dam/lexus/typography/nobel/nobel-book.wof
 }
 
 @font-face {
-font-family: "nobel-regular";
+font-family: "nobel-book-italic";
 font-display: swap;
-src: url(https://www.lexus.com/content/dam/lexus/typography/nobel/nobel-regular.woff) format("woff"), url(/etc.clientlibs/lexus/clientlibs/lexus-react/resources/static/media/nobel-regular.baff0f5c.woff) format("woff");
+src: url(https://www.lexus.com/content/dam/lexus/typography/nobel/nobel-book-italic.woff) format("woff"), url(/etc.clientlibs/lexus/clientlibs/lexus-react/resources/static/media/nobel-book-italic.8238a59e.woff) format("woff");
 font-style:normal
 }
 
 @font-face {
-font-family: "nobel-book-italic";
+font-family: "nobel-regular";
 font-display: swap;
-src: url(https://www.lexus.com/content/dam/lexus/typography/nobel/nobel-book-italic.woff) format("woff"), url(/etc.clientlibs/lexus/clientlibs/lexus-react/resources/static/media/nobel-book-italic.8238a59e.woff) format("woff");
+src: url(https://www.lexus.com/content/dam/lexus/typography/nobel/nobel-regular.woff) format("woff"), url(/etc.clientlibs/lexus/clientlibs/lexus-react/resources/static/media/nobel-regular.baff0f5c.woff) format("woff");
 font-style:normal
 }
 
@@ -36,13 +36,26 @@ font-family: "pakt";
 font-display: swap;
 src: url(https://www.lexus.com/content/dam/lexus/typography/pakt/pakt.woff) format("woff"), url(/etc.clientlibs/lexus/clientlibs/lexus-react/resources/static/media/pakt.ed8d8620.woff) format("woff")
 }
+/* OEM Font Embed */
 
 
+
+/* OEM Font */
+.acs-wrapper { 
+font-family: "nobel-book", sans-serif;
+font-weight: 400;
+}
+/* OEM Font */
+
+
+
+/* Heading Tags */
 .acs-h1, .acs-h2, .acs-h3, .acs-h4, .acs-h5, .acs-h6 {
 font-family: "nobel-book", sans-serif;
 font-weight: 400;
 line-height: 1.2;
-text-transform: uppercase
+text-transform: uppercase;
+letter-spacing: 0.1em
 }
 
 .acs-h1 {
@@ -95,26 +108,29 @@ font-size: 1.4rem !important;
 font-size: 1.2rem !important;
 }
 }
+/* Heading Tags */
 
 
-.acs-wrapper { 
-font-family: "nobel-book", sans-serif;
-font-weight: 400;
-}
 
-.acs-lexus-brand-xl {
+/* OEM Font Variables */
+.acs-lexus-brand-lt {
 font-family: "nobel-light";
 font-weight: 200;
 }
 
-.acs-lexus-brand-lt {
+.acs-lexus-brand-bk {
 font-family: "nobel-book"; 
 font-weight: 300;
 }
 
-.acs-lexus-brand-lt-italic {
+.acs-lexus-brand-bk-italic {
 font-family: "nobel-book-italic";
 font-weight: 300;
+}
+
+.acs-lexus-brand-rg {
+font-family: "nobel-regular"; 
+font-weight: 400;
 }
 
 .acs-lexus-brand-cond {
@@ -126,6 +142,8 @@ font-weight: 400;
 font-family: var(--bold-font);   
 font-weight: 700;
 }
+/* OEM Font Variables */
+
 
 
 /* Variables */
@@ -140,6 +158,7 @@ font-weight: 700;
 --dark: #1D1D1D;
 --bold-font: "nobel-bold", sans-serif;
 }
+/* Variables */
 
 
 
@@ -165,35 +184,50 @@ color: var(--gray4)
 .acs-dark {
 color: var(--dark)
 }
+/* Text Colors */
+
 
 
 /* Accent Colors */
 .acs-accent {
 color: var(--accent);
 }
+/* Accent Colors */
 
 
 
 /* BG Colors */
 .acs-bg-accent {
-background-color: var(--accent)
+--acs-bg-opacity: 1;
+background-color: var(--accent);
+background-color: rgba(182,161,113, var(--acs-bg-opacity))
 }
 .acs-bg-gray {
-background-color: var(--gray)
+--acs-bg-opacity: 1;
+background-color: var(--gray);
+background-color: rgba(249,249,249, var(--acs-bg-opacity))
 }
 .acs-bg-gray2 {
-background-color: var(--gray2)
+--acs-bg-opacity: 1;
+background-color: var(--gray2);
+background-color: rgba(245,245,245, var(--acs-bg-opacity))
 }
 .acs-bg-gray3 {
-background-color: var(--gray3)
+--acs-bg-opacity: 1;
+background-color: var(--gray3);
+background-color: rgba(234,234,234, var(--acs-bg-opacity))
 }
 .acs-bg-gray4 {
-background-color: var(--gray4)
+--acs-bg-opacity: 1;
+background-color: var(--gray4);
+background-color: rgba(238,238,238, var(--acs-bg-opacity))
 }
 .acs-bg-dark {
-background-color: var(--dark)
+--acs-bg-opacity: 1;
+background-color: var(--dark);
+background-color: rgba(29,29,29, var(--acs-bg-opacity))
 }
-
+/* BG Colors */
 
 
 
@@ -232,6 +266,8 @@ transition: all 150ms cubic-bezier(0.335, 0.015, 0.46, 0.995) 0s;
 .acs-link-accent3:hover {
 opacity: .6
 }
+/* Link Accent */
+
 
 
 /* BUTTONS: START */
